@@ -1,0 +1,20 @@
+{
+	"name": "base-node-ui",
+	"description": "Base UI node project",
+	"version": "1.0.0",
+	"private": true,
+
+	"dependencies": {
+		"express": "latest",
+		"morgan": "latest",
+		"body-parser": "latest",
+		"method-override": "latest",
+		"stylus": "latest",
+		"jade": "latest",
+		"nib": "latest"
+	},
+
+	"scripts": {
+		"start": "node server.js"
+	}
+}
