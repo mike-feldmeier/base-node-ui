@@ -1,20 +1,20 @@
 {
 	"name": "base-node-ui",
 	"description": "Base UI node project",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"private": true,
-
 	"dependencies": {
-		"express": "latest",
-		"morgan": "latest",
-		"body-parser": "latest",
-		"method-override": "latest",
-		"stylus": "latest",
-		"jade": "latest",
-		"nib": "latest"
+		"body-parser": "^1.18.3",
+		"bunyan": "^1.8.12",
+		"dotenv": "^6.2.0",
+		"env-wrapper": "^1.0.3",
+		"express": "^4.16.4",
+		"nib": "^1.1.2",
+		"pug": "^2.0.3",
+		"stylus": "^0.54.5"
 	},
-
 	"scripts": {
-		"start": "node server.js"
+		"start": "node server.js | bunyan",
+		"watch": "nodemon server.js | bunyan"
 	}
 }

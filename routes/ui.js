@@ -1,7 +1,7 @@
-module.exports = function(express) {
+'use strict'
 
-  express.get('/', function(req, res, next) {
-    res.render('index');
-  });
+const displayIndex = (req, res) => res.render('index')
 
+module.exports = router => {
+  router.get('/', displayIndex);
 };
